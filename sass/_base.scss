@@ -2,6 +2,10 @@ $default-font-color: #000;
 $background-color: #4a90e2;
 $container-bg-color: #f2f2f2;
 $container-border-color: #000;
+$textbox-border-color: lightgray;
+$button-text-color: #fff;
+$add-button-color: #4caf50;
+$clear-button-color: #9f6060;
 
 @mixin mq($size) {
     @media only screen and (min-width: $size) {
@@ -24,4 +28,18 @@ html, body {
     @include mq(768px) {
         font-size: 22px;
     }
+}
+
+body {
+    padding: 20px;
+    background-color: $background-color;
+}
+
+section {
+    background-color: $container-bg-color;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-border-color;
+    border-radius: 10px;
 }
